@@ -29,11 +29,13 @@
         private void InitializeComponent()
         {
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.button_BGW = new System.Windows.Forms.Button();
+            this.Button_BGW = new System.Windows.Forms.Button();
             this.TextBox = new System.Windows.Forms.TextBox();
-            this.button_images = new System.Windows.Forms.Button();
+            this.Button_images = new System.Windows.Forms.Button();
             this.BGWorker = new System.ComponentModel.BackgroundWorker();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // dateTimePicker1
@@ -42,17 +44,17 @@
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 21);
             this.dateTimePicker1.TabIndex = 0;
-            this.dateTimePicker1.Value = new System.DateTime(2019, 8, 6, 0, 0, 0, 0);
+            this.dateTimePicker1.Value = new System.DateTime(2019, 8, 7, 0, 0, 0, 0);
             // 
-            // button_BGW
+            // Button_BGW
             // 
-            this.button_BGW.Location = new System.Drawing.Point(155, 39);
-            this.button_BGW.Name = "button_BGW";
-            this.button_BGW.Size = new System.Drawing.Size(60, 46);
-            this.button_BGW.TabIndex = 1;
-            this.button_BGW.Text = "BGW";
-            this.button_BGW.UseVisualStyleBackColor = true;
-            this.button_BGW.Click += new System.EventHandler(this.button_BGW_Click);
+            this.Button_BGW.Location = new System.Drawing.Point(155, 39);
+            this.Button_BGW.Name = "Button_BGW";
+            this.Button_BGW.Size = new System.Drawing.Size(60, 46);
+            this.Button_BGW.TabIndex = 1;
+            this.Button_BGW.Text = "BGW";
+            this.Button_BGW.UseVisualStyleBackColor = true;
+            this.Button_BGW.Click += new System.EventHandler(this.Button_BGW_Click);
             // 
             // TextBox
             // 
@@ -62,15 +64,15 @@
             this.TextBox.Size = new System.Drawing.Size(200, 182);
             this.TextBox.TabIndex = 2;
             // 
-            // button_images
+            // Button_images
             // 
-            this.button_images.Location = new System.Drawing.Point(12, 39);
-            this.button_images.Name = "button_images";
-            this.button_images.Size = new System.Drawing.Size(57, 46);
-            this.button_images.TabIndex = 3;
-            this.button_images.Text = "images";
-            this.button_images.UseVisualStyleBackColor = true;
-            this.button_images.Click += new System.EventHandler(this.button_images_Click);
+            this.Button_images.Location = new System.Drawing.Point(12, 39);
+            this.Button_images.Name = "Button_images";
+            this.Button_images.Size = new System.Drawing.Size(57, 46);
+            this.Button_images.TabIndex = 3;
+            this.Button_images.Text = "images";
+            this.Button_images.UseVisualStyleBackColor = true;
+            this.Button_images.Click += new System.EventHandler(this.Button_images_Click);
             // 
             // BGWorker
             // 
@@ -84,19 +86,39 @@
             // 
             this.progressBar1.Location = new System.Drawing.Point(13, 93);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(200, 23);
+            this.progressBar1.Size = new System.Drawing.Size(177, 23);
             this.progressBar1.TabIndex = 4;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(196, 99);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 12);
+            this.label1.TabIndex = 5;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(217, 99);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(11, 12);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "%";
             // 
             // Pixiv
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(227, 316);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.progressBar1);
-            this.Controls.Add(this.button_images);
+            this.Controls.Add(this.Button_images);
             this.Controls.Add(this.TextBox);
-            this.Controls.Add(this.button_BGW);
+            this.Controls.Add(this.Button_BGW);
             this.Controls.Add(this.dateTimePicker1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "Pixiv";
             this.Text = "Pixiv";
@@ -108,11 +130,13 @@
         #endregion
 
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Button button_BGW;
-        private System.Windows.Forms.Button button_images;
+        private System.Windows.Forms.Button Button_BGW;
+        private System.Windows.Forms.Button Button_images;
         private System.ComponentModel.BackgroundWorker BGWorker;
         private System.Windows.Forms.ProgressBar progressBar1;
         public System.Windows.Forms.TextBox TextBox;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
 
