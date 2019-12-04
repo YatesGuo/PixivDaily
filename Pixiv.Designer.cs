@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pixiv));
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.Button_BGW = new System.Windows.Forms.Button();
             this.TextBox = new System.Windows.Forms.TextBox();
@@ -40,7 +41,7 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(13, 12);
+            this.dateTimePicker1.Location = new System.Drawing.Point(4, 5);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 21);
             this.dateTimePicker1.TabIndex = 0;
@@ -48,7 +49,7 @@
             // 
             // Button_BGW
             // 
-            this.Button_BGW.Location = new System.Drawing.Point(155, 39);
+            this.Button_BGW.Location = new System.Drawing.Point(146, 32);
             this.Button_BGW.Name = "Button_BGW";
             this.Button_BGW.Size = new System.Drawing.Size(60, 46);
             this.Button_BGW.TabIndex = 1;
@@ -58,15 +59,15 @@
             // 
             // TextBox
             // 
-            this.TextBox.Location = new System.Drawing.Point(13, 122);
+            this.TextBox.Location = new System.Drawing.Point(212, 5);
             this.TextBox.Multiline = true;
             this.TextBox.Name = "TextBox";
-            this.TextBox.Size = new System.Drawing.Size(200, 182);
+            this.TextBox.Size = new System.Drawing.Size(200, 99);
             this.TextBox.TabIndex = 2;
             // 
             // Button_images
             // 
-            this.Button_images.Location = new System.Drawing.Point(12, 39);
+            this.Button_images.Location = new System.Drawing.Point(3, 32);
             this.Button_images.Name = "Button_images";
             this.Button_images.Size = new System.Drawing.Size(57, 46);
             this.Button_images.TabIndex = 3;
@@ -84,15 +85,15 @@
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(13, 93);
+            this.progressBar1.Location = new System.Drawing.Point(4, 86);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(177, 23);
+            this.progressBar1.Size = new System.Drawing.Size(183, 23);
             this.progressBar1.TabIndex = 4;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(196, 99);
+            this.label1.Location = new System.Drawing.Point(187, 92);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(0, 12);
             this.label1.TabIndex = 5;
@@ -100,7 +101,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(217, 99);
+            this.label2.Location = new System.Drawing.Point(195, 92);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(11, 12);
             this.label2.TabIndex = 6;
@@ -110,7 +111,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(227, 316);
+            this.ClientSize = new System.Drawing.Size(417, 108);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.progressBar1);
@@ -119,6 +120,7 @@
             this.Controls.Add(this.Button_BGW);
             this.Controls.Add(this.dateTimePicker1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Pixiv";
             this.Text = "Pixiv";
