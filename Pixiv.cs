@@ -94,7 +94,7 @@ namespace PixivDaily
                     }
                 }
                 i++;
-                BGWorker.ReportProgress(i,urls.Count);
+                BGWorker.ReportProgress(i* 100/urls.Count,urls.Count);
             }
         }
 
@@ -194,15 +194,17 @@ namespace PixivDaily
             Get_pixiv_images(dateTimePicker1.Value.ToString("yyyyMMdd"));
             //System.Threading.Thread.Sleep(10);
             
+            
         }
 
         private void BGWorker_ProgressChanged(object sender, ProgressChangedEventArgs e)
         {
-            int total = int.Parse(e.UserState.ToString());
-            int curr = e.ProgressPercentage;
-            progressBar1.Maximum = total;
+            //int total = int.Parse(e.UserState.ToString());
+            //int curr = e.ProgressPercentage;
+            //progressBar1.Maximum = total;
+            //progressBar1.Value = e.ProgressPercentage;
+            //label1.Text = (curr *100/total).ToString();
             progressBar1.Value = e.ProgressPercentage;
-            label1.Text = (curr *100/total).ToString();
         }
 
         private void BGWorker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)

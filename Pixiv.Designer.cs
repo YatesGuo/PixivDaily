@@ -45,7 +45,7 @@
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 21);
             this.dateTimePicker1.TabIndex = 0;
-            this.dateTimePicker1.Value = new System.DateTime(2019, 8, 7, 0, 0, 0, 0);
+            this.dateTimePicker1.Value = new System.DateTime(2020, 1, 9, 0, 0, 0, 0);
             // 
             // Button_BGW
             // 
@@ -62,7 +62,7 @@
             this.TextBox.Location = new System.Drawing.Point(212, 5);
             this.TextBox.Multiline = true;
             this.TextBox.Name = "TextBox";
-            this.TextBox.Size = new System.Drawing.Size(200, 99);
+            this.TextBox.Size = new System.Drawing.Size(200, 104);
             this.TextBox.TabIndex = 2;
             // 
             // Button_images
@@ -87,7 +87,7 @@
             // 
             this.progressBar1.Location = new System.Drawing.Point(4, 86);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(183, 23);
+            this.progressBar1.Size = new System.Drawing.Size(186, 23);
             this.progressBar1.TabIndex = 4;
             // 
             // label1
@@ -101,7 +101,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(195, 92);
+            this.label2.Location = new System.Drawing.Point(196, 92);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(11, 12);
             this.label2.TabIndex = 6;
@@ -111,7 +111,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(417, 108);
+            this.ClientSize = new System.Drawing.Size(415, 111);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.progressBar1);
