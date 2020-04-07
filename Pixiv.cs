@@ -27,7 +27,7 @@ namespace PixivDaily
             try
             {
                 DateTime start = DateTime.Now;
-                int pagecount = 10;//控制排行拉取榜页数，最高10
+                int pagecount = 2;//控制排行拉取榜页数，最高10
                 int page = 1;
 
                 string savepath = $@"{Application.StartupPath}\original_images\{date}";
