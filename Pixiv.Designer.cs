@@ -37,6 +37,8 @@
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.ID_box = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // dateTimePicker1
@@ -59,7 +61,7 @@
             // 
             // TextBox
             // 
-            this.TextBox.Location = new System.Drawing.Point(212, 5);
+            this.TextBox.Location = new System.Drawing.Point(4, 116);
             this.TextBox.Multiline = true;
             this.TextBox.Name = "TextBox";
             this.TextBox.Size = new System.Drawing.Size(200, 104);
@@ -67,11 +69,11 @@
             // 
             // Button_images
             // 
-            this.Button_images.Location = new System.Drawing.Point(3, 32);
+            this.Button_images.Location = new System.Drawing.Point(4, 53);
             this.Button_images.Name = "Button_images";
-            this.Button_images.Size = new System.Drawing.Size(57, 46);
+            this.Button_images.Size = new System.Drawing.Size(45, 25);
             this.Button_images.TabIndex = 3;
-            this.Button_images.Text = "images";
+            this.Button_images.Text = "Down";
             this.Button_images.UseVisualStyleBackColor = true;
             this.Button_images.Click += new System.EventHandler(this.Button_images_Click);
             // 
@@ -107,11 +109,30 @@
             this.label2.TabIndex = 6;
             this.label2.Text = "%";
             // 
+            // ID_box
+            // 
+            this.ID_box.Location = new System.Drawing.Point(55, 30);
+            this.ID_box.Multiline = true;
+            this.ID_box.Name = "ID_box";
+            this.ID_box.Size = new System.Drawing.Size(85, 52);
+            this.ID_box.TabIndex = 7;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(26, 30);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(23, 12);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "ID:";
+            // 
             // Pixiv
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(415, 111);
+            this.ClientSize = new System.Drawing.Size(209, 225);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.ID_box);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.progressBar1);
@@ -139,6 +160,8 @@
         public System.Windows.Forms.TextBox TextBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox ID_box;
+        private System.Windows.Forms.Label label3;
     }
 }
 
