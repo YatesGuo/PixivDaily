@@ -163,9 +163,9 @@ namespace PixivDaily
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
             request.Method = "GET";
             request.UserAgent = "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36";
-            request.AllowAutoRedirect = false;
+            request.AllowAutoRedirect = true;
             
-            request.Timeout = 60000;
+            request.Timeout = -1;
             HttpWebResponse response = (HttpWebResponse)request.GetResponse();
             StreamReader sr = new StreamReader(response.GetResponseStream(), Encoding.UTF8);
             string html = sr.ReadToEnd();
@@ -194,7 +194,6 @@ namespace PixivDaily
         {
             Get_pixiv_images(dateTimePicker1.Value.ToString("yyyyMMdd"));
             //System.Threading.Thread.Sleep(10);
-
         }
 
         private void BGWorker_ProgressChanged(object sender, ProgressChangedEventArgs e)
@@ -209,7 +208,7 @@ namespace PixivDaily
 
         private void BGWorker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
-            TextBox.AppendText("Completed");
+            TextBox.AppendText("Completed\r\n");
             Button_images.Enabled = true;
         }
 

@@ -51,25 +51,25 @@
             // 
             // Button_BGW
             // 
-            this.Button_BGW.Location = new System.Drawing.Point(146, 32);
+            this.Button_BGW.Location = new System.Drawing.Point(1, 276);
             this.Button_BGW.Name = "Button_BGW";
-            this.Button_BGW.Size = new System.Drawing.Size(60, 46);
+            this.Button_BGW.Size = new System.Drawing.Size(94, 32);
             this.Button_BGW.TabIndex = 1;
-            this.Button_BGW.Text = "BGW";
+            this.Button_BGW.Text = "启动后台";
             this.Button_BGW.UseVisualStyleBackColor = true;
             this.Button_BGW.Click += new System.EventHandler(this.Button_BGW_Click);
             // 
             // TextBox
             // 
-            this.TextBox.Location = new System.Drawing.Point(4, 116);
+            this.TextBox.Location = new System.Drawing.Point(235, 5);
             this.TextBox.Multiline = true;
             this.TextBox.Name = "TextBox";
-            this.TextBox.Size = new System.Drawing.Size(200, 104);
+            this.TextBox.Size = new System.Drawing.Size(203, 104);
             this.TextBox.TabIndex = 2;
             // 
             // Button_images
             // 
-            this.Button_images.Location = new System.Drawing.Point(4, 53);
+            this.Button_images.Location = new System.Drawing.Point(122, 30);
             this.Button_images.Name = "Button_images";
             this.Button_images.Size = new System.Drawing.Size(45, 25);
             this.Button_images.TabIndex = 3;
@@ -87,15 +87,15 @@
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(4, 86);
+            this.progressBar1.Location = new System.Drawing.Point(1, 310);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(186, 23);
+            this.progressBar1.Size = new System.Drawing.Size(437, 23);
             this.progressBar1.TabIndex = 4;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(187, 92);
+            this.label1.Location = new System.Drawing.Point(418, 296);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(0, 12);
             this.label1.TabIndex = 5;
@@ -103,7 +103,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(196, 92);
+            this.label2.Location = new System.Drawing.Point(427, 296);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(11, 12);
             this.label2.TabIndex = 6;
@@ -111,7 +111,7 @@
             // 
             // ID_box
             // 
-            this.ID_box.Location = new System.Drawing.Point(55, 30);
+            this.ID_box.Location = new System.Drawing.Point(31, 30);
             this.ID_box.Multiline = true;
             this.ID_box.Name = "ID_box";
             this.ID_box.Size = new System.Drawing.Size(85, 52);
@@ -120,7 +120,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(26, 30);
+            this.label3.Location = new System.Drawing.Point(2, 30);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(23, 12);
             this.label3.TabIndex = 8;
@@ -130,7 +130,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(209, 225);
+            this.ClientSize = new System.Drawing.Size(440, 335);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.ID_box);
             this.Controls.Add(this.label2);
