@@ -47,7 +47,7 @@
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 21);
             this.dateTimePicker1.TabIndex = 0;
-            this.dateTimePicker1.Value = new System.DateTime(2020, 4, 7, 0, 0, 0, 0);
+            this.dateTimePicker1.Value = new System.DateTime(2020, 8, 6, 0, 0, 0, 0);
             // 
             // Button_BGW
             // 

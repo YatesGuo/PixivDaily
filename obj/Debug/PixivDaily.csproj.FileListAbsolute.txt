@@ -7,3 +7,13 @@ F:\Repos\1.DemoProjects(for test only)\PixivDaily\bin\Debug\PixivDaily.pdb
 F:\Repos\1.DemoProjects(for test only)\PixivDaily\obj\Debug\PixivDaily.exe
 F:\Repos\1.DemoProjects(for test only)\PixivDaily\obj\Debug\PixivDaily.pdb
 F:\Repos\1.DemoProjects(for test only)\PixivDaily\obj\Debug\PixivDaily.Pixiv.resources
+D:\桌面\Repos\1.DemoProjects(for test only)\PixivDaily\bin\Debug\PixivDaily.exe.config
+D:\桌面\Repos\1.DemoProjects(for test only)\PixivDaily\bin\Debug\PixivDaily.exe
+D:\桌面\Repos\1.DemoProjects(for test only)\PixivDaily\bin\Debug\PixivDaily.pdb
+D:\桌面\Repos\1.DemoProjects(for test only)\PixivDaily\obj\Debug\PixivDaily.csprojAssemblyReference.cache
+D:\桌面\Repos\1.DemoProjects(for test only)\PixivDaily\obj\Debug\PixivDaily.Pixiv.resources
+D:\桌面\Repos\1.DemoProjects(for test only)\PixivDaily\obj\Debug\PixivDaily.Properties.Resources.resources
+D:\桌面\Repos\1.DemoProjects(for test only)\PixivDaily\obj\Debug\PixivDaily.csproj.GenerateResource.cache
+D:\桌面\Repos\1.DemoProjects(for test only)\PixivDaily\obj\Debug\PixivDaily.csproj.CoreCompileInputs.cache
+D:\桌面\Repos\1.DemoProjects(for test only)\PixivDaily\obj\Debug\PixivDaily.exe
+D:\桌面\Repos\1.DemoProjects(for test only)\PixivDaily\obj\Debug\PixivDaily.pdb
