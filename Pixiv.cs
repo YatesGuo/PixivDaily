@@ -1,14 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.IO;
-using System.Linq;
 using System.Net;
 using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PixivDaily
@@ -44,7 +40,7 @@ namespace PixivDaily
                 //Regex reg = new Regex(@"(?<=class=""new""((?!之前 #\d).)+data-filter=""thumbnail-filter lazy-image""data-src="")(.+?\.jpg)(?=""data-type=""illust"")");
                 while (page <= pagecount )
                 {
-                    string html = Get_html($"https://www.pixiv.net/ranking.php?mode=daily&content=illust&p={page}&date={date}");
+                    string html = Get_html($"http://www.pixiv.net/ranking.php?mode=daily&content=illust&p={page}&date={date}");
                     //string html = File.ReadAllText("1.html");//读文件模拟返回页面
 
                     //List<string> imgurl = new List<string>();
@@ -161,11 +157,16 @@ namespace PixivDaily
         public string Get_html(string url)
         {
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
+            
+            //request.ProtocolVersion = HttpVersion.Version10;
+
             request.Method = "GET";
             request.UserAgent = "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36";
             request.AllowAutoRedirect = true;
-            
-            request.Timeout = -1;
+            //request.Headers.Add("Cookie", "__cfduid=daf112bf8643d94c9e7b5b2f1e8fddede1599028830; first_visit_datetime_pc=2020-09-02+15%3A40%3A30; p_ab_id=9; p_ab_id_2=5; p_ab_d_id=832174903; yuid_b=FykoaQU; PHPSESSID=65gk2q956dsdpg9j9tq9jie0mu0eh95s");
+            //request.Host = "www.pixiv.net:443";
+            request.Timeout = 60000;
+
             HttpWebResponse response = (HttpWebResponse)request.GetResponse();
             StreamReader sr = new StreamReader(response.GetResponseStream(), Encoding.UTF8);
             string html = sr.ReadToEnd();
